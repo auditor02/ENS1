@@ -104,16 +104,16 @@ const getProviderOrSigner = async () => {
         providerOptions: {},
         disableInjectedProvider: false,
     });
-  connectWallet();
-    }
-  }, [walletConnected]);
+    connectWallet(); 
+     }
+    }, [walletConnected]);
 
   return (
     <div>
       <Head>
         <title>ENS Dapp</title>
         <meta name='description' content='ENS-Dapp' />
-        <link ref="icon" href="/favicon.ico" />
+        <link ref={(ref) => icon = ref} href="/favicon.ico" />
       </Head>
       <div className={styles.main}>
         <div>
